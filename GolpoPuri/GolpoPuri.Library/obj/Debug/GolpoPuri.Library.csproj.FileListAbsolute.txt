@@ -1,0 +1,5 @@
+C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.Library\bin\Debug\GolpoPuri.Library.dll
+C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.Library\bin\Debug\GolpoPuri.Library.pdb
+C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.Library\obj\Debug\GolpoPuri.Library.csprojResolveAssemblyReference.cache
+C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.Library\obj\Debug\GolpoPuri.Library.dll
+C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.Library\obj\Debug\GolpoPuri.Library.pdb

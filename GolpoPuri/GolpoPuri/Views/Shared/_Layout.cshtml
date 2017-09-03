@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- meta data-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all,index,follow" />
+    <!--end meta data-->
+    
+
+    <title>@ViewBag.Title - Golpo Puri</title>
+    <meta name="description" content="developers - Free Meet the Team Section Tutorial" />
+    
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+
+   
+    <!--style sheet-->
+    <link rel="stylesheet" type="text/css" href="~/Content/OurContent/css/style.css" /> <!-- Main stylesheet /-->
+    <link rel="stylesheet" type="text/css" href="~/Content/OurContent/css/bootstrap.css"> <!-- Grid framework /-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Open Sans /-->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'> <!-- PT Sans Narrow /-->
+    <link href="~/Content/OurContent/font-awesome/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous"> <!-- Font Awesome /-->
+    <link rel="shortcut icon" href="~/Content/OurContent/img/favicon.png" type="image/x-icon" /> <!-- Favicon /-->
+    <!-- end of style sheet-->
+
+    
+
+</head>
+<body>
+    <!-- start the header-->
+    <header>
+        <div class="row-container">
+            <!---->
+            <nav class="navbar navbar-default topNavBar" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")"><i class="fa fa-home"></i></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse topNav" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        @*<li class="active"><a href="#">Developers</a></li>*@
+                        <li>@Html.ActionLink("Developer", "Developer", "Home", new {@class= "active" })</li>
+                        <li>@Html.ActionLink("Contact","Contact","Home")</li>
+                        <li>@Html.ActionLink("Write Story","Index","Users",new { area = "Users"},null)</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                <!--for the login and registration this is a partial template-->
+                    @Html.Partial("_LoginPartial")
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            <!---->
+        </div>
+        <div class="row-container">
+
+            <div class="logo-container"><img src="~/Content/OurContent/img/golpo-puri.png" /></div>
+            <div class="top-search-cont">
+                <form class="search-form" role="search">
+                    <input class="search" type="text" name="search" placeholder="Search..">
+                </form>
+            </div>
+
+
+        </div>
+    </header>   
+    <div class="clearfix"></div>
+    <!--end the header-->
+
+
+    <!--RenderBody() start here-->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        </div>
+    <!--RenderBody() end here-->
+
+
+<!-- start the footer from the theme-->
+<div class="clearfix"></div>
+<footer class="footer-offset">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <h6 class="heading7">CONTACT US</h6>
+                <p>Lorem Ipsum is simply dummy text of the Golpuri. Lorem Ipsum is simply dummy text of the Golpuri. Lorem Ipsum is simply dummy text of the Golpuri..</p>
+                <p><i class="fa fa-map-pin"></i> House # 184 (8th Floor), Senpara Parbata, Begum Rokeya Sarani, Mirpur-10, Dhaka-1216, Bangladesh</p>
+                <p><i class="fa fa-phone"></i> Phone : +88 02 58050442-3</p>
+                <p><i class="fa fa-envelope"></i> E-mail : sabbir@devskill.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">QUICK LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> Funny</a></li>
+                    <li><a href="#"> Mystry</a></li>
+                    <li><a href="#"> Horror & suspense</a></li>
+                    <li><a href="#"> Motivated</a></li>
+                    <li><a href="#"> Incouraged </a></li>
+                    <li><a href="#"> Educational</a></li>
+                    <li><a href="#"> Learning </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Lorem Ipsum is simply dummy text of the Golpuri. what it means for you.<span>August 3,2017</span></p>
+                    <p>Lorem Ipsum is simply dummy text of the Golpuri. what it means for you.<span>August 3,2017</span></p>
+                    <p>Lorem Ipsum is simply dummy text of the Golpuri. what it means for you.<span>August 3,2017</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+
+                <h6 class="heading7"></h6>
+                <!---->
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote class="blockquote-footer-cont" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook"><i class="fa fa-facebook"></i> Facebook</a></blockquote>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+                <div class="fb-page" data-href="https://www.twitter.com/twitter" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote class="blockquote-footer-cont" cite="https://www.twitter.com/twitter"><a href="https://www.twitter.com/twitter"><i class="fa fa-twitter"></i> Twitter</a></blockquote>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+                <div class="fb-page" data-href="https://www.devskill.com/" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote class="blockquote-footer-cont" cite="https://www.devskill.com"><a href="https://www.devskill.com"><i class="fa fa-globe"></i>  Devskill</a></blockquote>
+                    </div>
+                </div>
+                <!---->
+                <!---->
+                <div class="fb-page" data-href="https://www.training.devskill.com/" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote class="blockquote-footer-cont" cite="https://www.training.devskill.com"><a href="https://www.training.devskill.com"><i class="fa fa-globe"></i> Devskill Training Academy</a></blockquote>
+                    </div>
+                </div>
+                <!---->
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Top footer end-->
+<!--Footer start-->
+<div class="clearfix"></div>
+<footer>
+    <p class="footer-txt"> &copy Copyright 2017.</p>
+</footer>
+    @{ 
+        var data = ViewBag.Title;
+    }
+<!--Footer end-->
+<!--end the footer-->
+
+    <!--jquery code -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- Load jQuery -->
+    <!-- jQuery Code for the View All Button -->
+    <script>
+        
+		$(document).ready(function(){
+		  $(".fadeIn").click(function(){
+			$("div.row2").fadeIn();
+			$("button.fadeIn").hide();
+		  });
+		});
+
+		var $star_rating = $('.star-rating .fa');
+
+		var SetRatingStar = function() {
+		  return $star_rating.each(function() {
+			if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+			  return $(this).removeClass('fa-star-o').addClass('fa-star');
+			} else {
+			  return $(this).removeClass('fa-star').addClass('fa-star-o');
+			}
+		  });
+		};
+
+		$star_rating.on('click', function() {
+		  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+		  return SetRatingStar();
+		});
+
+		SetRatingStar();
+		$(document).ready(function() {
+
+		});
+    </script>
+    <script src="~/Content/OurContent/js/bootstrap.js"></script>
+
+    <!---->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" language="javascript" src="~/Content/OurContent/js/jquery.dotdotdot.min.js"></script>
+    <script type="text/javascript" language="javascript">
+		$(function() {
+			$('#dot1').dotdotdot();
+
+			$('#dot2').dotdotdot();
+
+			$('#dot3').dotdotdot({
+				after: 'a.readmore'
+			});
+
+			$('#dot3-1').dotdotdot({
+				after: 'a.readmore'
+			});
+
+			$('#dot3-2').dotdotdot({
+				after: 'a.readmore'
+			});
+
+
+			$('#dot3-3').dotdotdot({
+				after: 'a.readmore'
+			});
+
+			$('#dot3-4').dotdotdot({
+				after: 'a.readmore'
+			});
+
+
+			$('#dot4').dotdotdot({
+				watch: 'window'
+			});
+
+			var $dot5 = $('#dot5');
+			$dot5.append(' <a class="toggle" href="#"><span class="open">[ + ]</span><span class="close">[ - ]</span></a>');
+
+
+			function createDots() {
+				$dot5.dotdotdot({
+					after: 'a.toggle'
+				});
+			}
+
+			function destroyDots() {
+				$dot5.trigger('destroy');
+			}
+			createDots();
+
+			$dot5.on(
+				'click',
+				'a.toggle',
+				function() {
+					$dot5.toggleClass('opened');
+
+					if ($dot5.hasClass('opened')) {
+						destroyDots();
+					} else {
+						createDots();
+					}
+					return false;
+				}
+			);
+
+			$('#dot6 .pathname').each(function() {
+				var path = $(this).html().split('/');
+				if (path.length > 1) {
+					var name = path.pop();
+					$(this).html(path.join('/') + '<span class="filename">/' + name + '</span>');
+					$(this).dotdotdot({
+						after: '.filename',
+						wrap: 'letter'
+					});
+				}
+			});
+
+			$('#dot7').dotdotdot({maxLength:5});
+
+		});
+    </script>
+    <!--end of code-->
+
+    <!--this jquery and bootstrap is commneted out because for this we got error-->
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+
+    <!---if we commented out this line then out partial page cant run-->
+    @RenderSection("scripts", required: false)
+</body>
+</html>
