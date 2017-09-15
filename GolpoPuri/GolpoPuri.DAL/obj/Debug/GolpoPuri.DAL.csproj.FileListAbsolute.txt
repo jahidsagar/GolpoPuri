@@ -10,3 +10,16 @@ C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.DAL\bi
 C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.Library.pdb
 C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.xml
 C:\Users\JANNAT\documents\visual studio 2017\Projects\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.DAL.dll.config
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.DAL.dll
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.DAL.pdb
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.dll
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.Library.dll
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\GolpoPuri.Library.pdb
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.xml
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\obj\Debug\GolpoPuri.DAL.csprojResolveAssemblyReference.cache
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\obj\Debug\GolpoPuri.DAL.csproj.CoreCompileInputs.cache
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\obj\Debug\GolpoPuri.DAL.dll
+E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri.DAL\obj\Debug\GolpoPuri.DAL.pdb

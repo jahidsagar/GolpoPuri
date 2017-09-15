@@ -9,7 +9,7 @@ namespace GolpoPuri.Areas.Users.Controllers
     public class UsersController : Controller
     {
         // GET: Users/Users
-        [Authorize]
+        //[Authorize]
         public ActionResult Index()
         {
             return View();
