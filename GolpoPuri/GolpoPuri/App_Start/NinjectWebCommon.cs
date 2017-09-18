@@ -66,6 +66,7 @@ namespace GolpoPuri.App_Start
             //this is our code for binding to a class with interface
             kernel.Bind<IStoryModel>().To<StoryModel>();
             kernel.Bind<IUnitOfwork>().To<UnitOfwork>();
+            kernel.Bind<ICategoryModel>().To<CategoryModel>();
             
 
         }

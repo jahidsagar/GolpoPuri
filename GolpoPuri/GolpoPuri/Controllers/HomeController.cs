@@ -19,9 +19,11 @@ namespace GolpoPuri.Controllers
 
 
         IStoryModel _storyModel;
-        public HomeController(IStoryModel _storyModel)
+        ICategoryModel _categoryModel;
+        public HomeController(IStoryModel _storyModel , ICategoryModel _categoryModel)
         {
             this._storyModel = _storyModel;
+            this._categoryModel = _categoryModel;
         }
 
 
@@ -33,7 +35,7 @@ namespace GolpoPuri.Controllers
 
             //woerk successful
             _storyModel.CreateStory("this title", "this is body", "");
-
+            _categoryModel.CreateCategory("testCategory");
             return View();
         }
 
