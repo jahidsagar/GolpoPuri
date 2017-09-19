@@ -57,5 +57,11 @@ namespace GolpoPuri.Controllers
         {
             return View();
         }
+
+        //we will pass id for reading story
+        public ActionResult ReadMore()
+        {
+            return View();
+        }
     }
 }
