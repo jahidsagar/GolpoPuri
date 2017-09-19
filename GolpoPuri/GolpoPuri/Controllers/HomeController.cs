@@ -34,8 +34,8 @@ namespace GolpoPuri.Controllers
 
 
             //woerk successful
-            _storyModel.CreateStory("this title", "this is body", "");
-            _categoryModel.CreateCategory("testCategory");
+            //_storyModel.CreateStory("this title", "this is body", "");
+            //_categoryModel.CreateCategory("testCategory");
             return View();
         }
 
