@@ -14,7 +14,7 @@ namespace GolpoPuri.DAL
         public ICommentRepository CommentRepository { get; private set; }
         public IUsersRepository UsersRepository { get; private set; }
         public ICatesoriesRepository CategoryRepository { get; private set; }
-
+        public IDeveloperRepository DevelopperRepository { get; private set; }
         //add reference here and also add its interface
         private bool disposed = false;
 
@@ -25,7 +25,7 @@ namespace GolpoPuri.DAL
             this.CommentRepository = new CommentRepository(context);
             this.UsersRepository = new UsersRepository(context);
             this.CategoryRepository = new CategoriesRepository(context);
-            
+            this.DevelopperRepository = new DeveloperRepository(context);
         }
 
         

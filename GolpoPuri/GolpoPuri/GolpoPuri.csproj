@@ -224,7 +224,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\CategoryModel.cs" />
+    <Compile Include="DAL\DeveloperModel.cs" />
     <Compile Include="DAL\ICategoryModel.cs" />
+    <Compile Include="DAL\IDeveloperModel.cs" />
     <Compile Include="DAL\IStoryModel.cs" />
     <Compile Include="DAL\IUnitOfwork.cs" />
     <Compile Include="DAL\StoryContext.cs" />
