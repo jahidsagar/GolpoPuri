@@ -36,12 +36,48 @@ namespace GolpoPuri.DAL
         {
             var _dev = new Developer();
             _dev.Id = Guid.NewGuid();
-            _dev.PhotoUrl = dev.PhotoUrl;
-            _dev.Role = dev.Role;
-            _dev.FacebookID = dev.FacebookID;
-            _dev.GitHubID = dev.GitHubID;
-            _dev.LinkedInID = dev.LinkedInID;
-            _dev.StackoverflowID = dev.StackoverflowID;
+            if (string.IsNullOrEmpty(dev.PhotoUrl))
+            {
+                _dev.PhotoUrl = "";
+            }
+            else
+                _dev.PhotoUrl = dev.PhotoUrl;
+
+            if (string.IsNullOrEmpty(_dev.Role))
+            {
+                _dev.PhotoUrl = "";
+            }
+            else
+                _dev.Role = dev.Role;
+
+            if (string.IsNullOrEmpty(_dev.FacebookID))
+            {
+                _dev.FacebookID = "";
+            }
+            else
+                _dev.FacebookID = dev.FacebookID;
+
+
+            if (string.IsNullOrEmpty(_dev.GitHubID))
+            {
+                _dev.GitHubID = "";
+            }
+            else
+                _dev.GitHubID = dev.GitHubID;
+
+            if (string.IsNullOrEmpty(_dev.LinkedInID))
+            {
+                _dev.LinkedInID = "";
+            }
+            else
+                _dev.LinkedInID = dev.LinkedInID;
+
+            if (string.IsNullOrEmpty(_dev.StackoverflowID))
+            {
+                _dev.StackoverflowID = "";
+            }
+            else
+                _dev.StackoverflowID = dev.StackoverflowID;
 
             DeveloperUnitOfWork.DevelopperRepository.insert(_dev);
             DeveloperUnitOfWork.Save();

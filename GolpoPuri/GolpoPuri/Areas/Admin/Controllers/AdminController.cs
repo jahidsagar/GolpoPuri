@@ -94,8 +94,10 @@ namespace GolpoPuri.Areas.Admin.Controllers
             {
                 try
                 {
-
-                    IDeveloperModel _dev = new DeveloperModel(DeveloperModel);
+                    StoryContext con = new StoryContext();
+                    IUnitOfwork obj = (IUnitOfwork)(con);
+                    //IDeveloperModel _dev = new DeveloperModel();
+                    DeveloperModel _dev = new DeveloperModel(obj);
 
 
                     return RedirectToAction("Index");

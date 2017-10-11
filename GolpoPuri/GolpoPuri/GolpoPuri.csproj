@@ -7735,6 +7735,7 @@
     <Content Include="Areas\Admin\Content\bower_components\select2\src\scss\_dropdown.scss" />
     <Content Include="Areas\Admin\Content\bower_components\select2\src\scss\_multiple.scss" />
     <Content Include="Areas\Admin\Content\bower_components\select2\src\scss\_single.scss" />
+    <Content Include="Areas\Admin\Views\Admin\AddDeveloper.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
