@@ -1,1 +1,26 @@
 2017-08-22 22:11:24,783 [5] DEBUG Test [(null)] - test debug
+2017-10-12 06:45:41,921 [5] DEBUG Test [(null)] - test debug
+2017-10-12 06:46:10,460 [5] DEBUG Test [(null)] - test debug
+2017-10-12 06:49:02,141 [5] DEBUG Test [(null)] - test debugSystem.InvalidCastException: Unable to cast object of type 'GolpoPuri.DAL.StoryContext' to type 'GolpoPuri.DAL.IUnitOfwork'.
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 108
+2017-10-12 06:55:14,436 [8] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 82
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 111
+2017-10-12 06:55:18,860 [5] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 82
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 111
+2017-10-12 06:59:53,954 [11] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 82
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 111
+2017-10-14 19:38:15,182 [5] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 83
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 112
+2017-10-14 19:38:59,576 [5] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 83
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 112
+2017-10-14 19:40:47,491 [10] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 83
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 112
+2017-10-14 19:41:05,925 [7] DEBUG Test [(null)] - test debug System.NullReferenceException: Object reference not set to an instance of an object.
+   at GolpoPuri.DAL.DeveloperModel.CreateDev(Developer dev) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\DAL\DeveloperModel.cs:line 83
+   at GolpoPuri.Areas.Admin.Controllers.AdminController.AddDeveloper(Developer developer) in E:\project folder\GolpoPuri\GolpoPuri\GolpoPuri\Areas\Admin\Controllers\AdminController.cs:line 112

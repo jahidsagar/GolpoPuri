@@ -5,11 +5,22 @@ using System.Web;
 using System.Web.Mvc;
 using GolpoPuri.DAL;
 using GolpoPuri.Library;
+using log4net;
+using log4net.Config;
+
 
 namespace GolpoPuri.Areas.Admin.Controllers
 {
     public class AdminController : Controller
     {
+        private static readonly ILog log = LogManager.GetLogger("Test");
+        IDeveloperModel devmodel;
+
+        public AdminController(IDeveloperModel devmodel)
+        {
+            this.devmodel = devmodel;
+        }
+
         // GET: Admin/Admin
         public ActionResult Index()
         {
@@ -88,23 +99,27 @@ namespace GolpoPuri.Areas.Admin.Controllers
             }
         }
 
+        public ActionResult AddDeveloper()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public ActionResult AddDeveloper(Developer developer)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    StoryContext con = new StoryContext();
-                    IUnitOfwork obj = (IUnitOfwork)(con);
-                    //IDeveloperModel _dev = new DeveloperModel();
-                    DeveloperModel _dev = new DeveloperModel(obj);
+                    developer.Id = Guid.NewGuid();
+                    devmodel.CreateDev(developer);
 
 
                     return RedirectToAction("Index");
                 }
-                catch
+                catch(Exception e)
                 {
-                    
+                    log.Debug("in admin controller :- "+e);
                 }
             }
             return View();

@@ -5,6 +5,6 @@ namespace GolpoPuri.DAL
     public interface IDeveloperModel
     {
         //Developer CreateDev(string Name, string PhotoUrl, string role, string linkdin, string facebook, string github, string stckoverflow);
-        Developer CreateDev(Developer dev);
+        void CreateDev(Developer dev);
     }
 }

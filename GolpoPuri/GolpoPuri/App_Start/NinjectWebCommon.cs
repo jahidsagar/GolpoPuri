@@ -67,6 +67,7 @@ namespace GolpoPuri.App_Start
             kernel.Bind<IStoryModel>().To<StoryModel>();
             kernel.Bind<IUnitOfwork>().To<UnitOfwork>();
             kernel.Bind<ICategoryModel>().To<CategoryModel>();
+            kernel.Bind<IDeveloperModel>().To<DeveloperModel>();
             
 
         }
